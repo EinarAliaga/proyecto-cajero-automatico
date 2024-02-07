@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cajero Automático</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h1>Mi Cajero Automático</h1>
+
+  <label for="cuentas">Selecciona una cuenta:</label>
+
+  <select id="cuentas">
+
+    <option value="0">Mali</option>
+    <option value="1">Gera</option>
+    <option value="2">Maui</option>
+
+  </select>
+
+  <button onclick="iniciarSesion()">Iniciar Sesión</button>
+
+  <div id="operaciones" style="display: none;">
+
+    <button id="consultarSaldo" onclick="consultarSaldo()">Consultar Saldo</button>
+    <button id="ingresar" onclick="mostrarPanel('ingresar')">Ingresar</button>
+    <button id="retirar" onclick="mostrarPanel('retirar')">Retirar</button>
+
+  </div>
+
+  <div id="panelNumeros" style="display: none;">
+
+    <div id="pantallaNumeros">0</div>
+
+    <button onclick="agregarNumero(1)">1</button>
+    <button onclick="agregarNumero(2)">2</button>
+    <button onclick="agregarNumero(3)">3</button>
+    <br>
+    <button onclick="agregarNumero(4)">4</button>
+    <button onclick="agregarNumero(5)">5</button>
+    <button onclick="agregarNumero(6)">6</button>
+    <br>
+    <button onclick="agregarNumero(7)">7</button>
+    <button onclick="agregarNumero(8)">8</button>
+    <button onclick="agregarNumero(9)">9</button>
+    <br>
+    <button onclick="agregarNumero(0)">0</button>
+    <button onclick="borrarNumero()">Borrar</button>
+    <button onclick="realizarOperacion()">Enter</button>
+
+  </div>
+
+  <div id="saldoActual" style="display: none;"></div>
+
+  <div id="montoOperacion" style="display: none;"></div>
+
+  <script src="./index.js"></script>
+
+</body>
+</html>

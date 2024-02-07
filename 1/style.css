@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  select, input, button {
+    margin: 10px;
+  }
+  
+  /* Estilos específicos para los botones */
+  button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button#consultarSaldo {
+    background-color: purple;
+    color: white;
+  }
+  
+  button#retirar {
+    background-color: red;
+    color: white;
+  }
+  
+  button#ingresar {
+    background-color: green;
+    color: white;
+  }
+  

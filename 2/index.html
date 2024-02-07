@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cajero Automático</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <script src="./index.js"></script>
+
+  <div class="cajero">
+
+    <h1>Bienvenido a Mi Cajero Automático</h1>
+    <h2>Seleccione una cuenta:</h2>
+
+    <select id="cuentas">
+
+      <option value="0">Silu</option>
+      <option value="1">Amaria</option>
+      <option value="2">Raula</option>
+
+    </select>
+
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <div id="teclado">
+
+      <button onclick="agregarNumero('1')">1</button>
+      <button onclick="agregarNumero('2')">2</button>
+      <button onclick="agregarNumero('3')">3</button>
+      <button onclick="agregarNumero('4')">4</button>
+      <button onclick="agregarNumero('5')">5</button>
+      <button onclick="agregarNumero('6')">6</button>
+      <button onclick="agregarNumero('7')">7</button>
+      <button onclick="agregarNumero('8')">8</button>
+      <button onclick="agregarNumero('9')">9</button>
+      <button onclick="agregarNumero('0')">0</button>
+      <button onclick="borrarUltimo()">Borrar</button>
+      <button onclick="ingresar()">Enter</button>
+      
+    </div>
+
+    <div id="operaciones" class="oculto">
+
+      <h2>Seleccione una operación:</h2>
+      <button onclick="consultarSaldo()">Consultar Saldo</button>
+      <button onclick="ingresarMonto()">Ingresar Monto</button>
+      <button onclick="retirarMonto()">Retirar Monto</button>
+
+    </div>
+
+  </div>
+
+  <div id="resultado" class="oculto">
+
+    <p id="mensaje"></p>
+    <p id="saldo"></p>
+
+  </div>
+</body>
+</html>
